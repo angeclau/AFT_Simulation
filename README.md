@@ -51,7 +51,7 @@ For more information see: \url{https://github.com/angeclau/AFTCoop}.
 ## 🧪 Running AFTCoop simulation study
 
 For the main simulation, the R function *Main_Simulation_Direct_algorithm.R* serves as a wrapper for the main simulation study, which consists of several scenarios.
-The most relevant function is *run_main_manuscript_simulation.R*, which calls the $generate\_data()$ and $aft\_coop()$ functions from the **AFTCoop** R Package and performs the analysis for a given scenario.
+The most relevant function is *run_main_manuscript_simulation.R*, which calls the generate_data() and aft\_coop() functions from the **AFTCoop** R Package and performs the analysis for a given scenario.
 The pre-computed output is saved in the **OUTPUT_SNR_0.8** folder and consists of several boxplots (in PDF format) and several tables (in txt format).
 For example, *Table_Err_nsimul50_model_weibull_weak_TRUE_tu_6_tz_6_rate_40_lam_min_FALSE_SNR_0.8.txt* corresponds to the 50 simulations for the Weibull model, in the weak dimensionality scenario, with  $t_U=t_Z=6$.
 The *Boxplot_nsimul_50_model_weibull_weak_TRUE_tu_6_tz_6_rate_40_lam_min_FALSE_SNR_0.8.pdf* is the corresponding boxplot.
