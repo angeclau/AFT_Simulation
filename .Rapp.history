@@ -1,0 +1,109 @@
+setwd("~/Library/CloudStorage/Dropbox/Private/Claudia/works/UnderWork/OurCooperativeLearning/AFTCoop_Simulation_Revised")
+ls()
+getwd()
+# This function run the main simulation results for....#
+#
+library(AFTCoop)#
+#
+## Useful functions for simulation and graphics #
+source("run_main_manuscript_simulation.R")#
+source("boxplot_measure.R")#
+#
+## General settings for running the main simulation study #
+nsimul<-5#
+myfolder<-"OUTPUT_SNR"#
+rate<-40#
+weak<-F # Run the simulation twice. The first with weak=T (weak high dimensional regime); the second with weak=F (strong high dimensional regime)  #
+lam_min<-F#
+snr <- 0.8#
+parallel_rho<-TRUE#
+ncore_max_rho<-2#
+parallel_cv<- TRUE#
+ncore_max_cv<-5#
+#
+myfolder<-paste(myfolder,snr,sep="_")#
+#
+## Running the simulation under model weibull#
+mymodel<-"weibull"#
+#
+# Case 1:#
+tu<-6#
+tz<-6#
+#
+run_main_manuscript_simulation(nsimul=nsimul,model=mymodel,tu=tu,tz=tz,weak=weak,rate=rate,snr=snr,#
+                          parallel.rho= parallel_rho,#
+                          ncore_max_rho=ncore_max_rho,#
+                          parallel.cv= parallel_cv,#
+                          ncore_max_cv=ncore_max_cv,#
+                          folder=myfolder)
+rm(list=ls())
+# This function run the main simulation results for....#
+#
+library(AFTCoop)#
+#
+## Useful functions for simulation and graphics #
+source("run_main_manuscript_simulation.R")#
+source("boxplot_measure.R")#
+#
+## General settings for running the main simulation study #
+nsimul<-5#
+myfolder<-"OUTPUT_SNR"#
+rate<-40#
+weak<-F # Run the simulation twice. The first with weak=T (weak high dimensional regime); the second with weak=F (strong high dimensional regime)  #
+lam_min<-F#
+snr <- 0.8#
+parallel_rho<-FALSE#
+ncore_max_rho<-1#
+parallel_cv<- TRUE#
+ncore_max_cv<-5#
+#
+myfolder<-paste(myfolder,snr,sep="_")#
+#
+## Running the simulation under model weibull#
+mymodel<-"weibull"#
+#
+# Case 1:#
+tu<-6#
+tz<-6#
+#
+run_main_manuscript_simulation(nsimul=nsimul,model=mymodel,tu=tu,tz=tz,weak=weak,rate=rate,snr=snr,#
+                          parallel.rho= parallel_rho,#
+                          ncore_max_rho=ncore_max_rho,#
+                          parallel.cv= parallel_cv,#
+                          ncore_max_cv=ncore_max_cv,#
+                          folder=myfolder)
+# This function run the main simulation results for....#
+#
+library(AFTCoop)#
+#
+## Useful functions for simulation and graphics #
+source("run_main_manuscript_simulation.R")#
+source("boxplot_measure.R")#
+#
+## General settings for running the main simulation study #
+nsimul<-5#
+myfolder<-"OUTPUT_SNR"#
+rate<-40#
+weak<-F # Run the simulation twice. The first with weak=T (weak high dimensional regime); the second with weak=F (strong high dimensional regime)  #
+lam_min<-F#
+snr <- 0.8#
+parallel_rho<-FALSE#
+ncore_max_rho<-1#
+parallel_cv<- FALSE#
+ncore_max_cv<-1#
+#
+myfolder<-paste(myfolder,snr,sep="_")#
+#
+## Running the simulation under model weibull#
+mymodel<-"weibull"#
+#
+# Case 1:#
+tu<-6#
+tz<-6#
+#
+run_main_manuscript_simulation(nsimul=nsimul,model=mymodel,tu=tu,tz=tz,weak=weak,rate=rate,snr=snr,#
+                          parallel.rho= parallel_rho,#
+                          ncore_max_rho=ncore_max_rho,#
+                          parallel.cv= parallel_cv,#
+                          ncore_max_cv=ncore_max_cv,#
+                          folder=myfolder)
