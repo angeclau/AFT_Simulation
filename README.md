@@ -203,23 +203,29 @@ over rho values and default settings.
   **Additional_OUTPUT** folder.
 
 ## Session Info for the Main Simulation
+## Session info
 
-─ Session info ───────────────────────────────────────────────────────────────────────────────────────────────────────────
- setting  value
- version  R version 4.5.3 (2026-03-11)
- os       macOS 27.0.1
- system   aarch64, darwin20
- ui       RStudio
- language (EN)
- collate  en_US.UTF-8
- ctype    en_US.UTF-8
- tz       Europe/Rome
- date     2026-10-14
- rstudio  2026.09.0+174 Autumn Hawkbit (desktop)
- pandoc   3.10 @ /Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools/aarch64/ (via rmarkdown)
- quarto   1.10.18 @ /Applications/RStudio.app/Contents/Resources/app/quarto/bin/quarto
+The results in the manuscript were obtained with the environments
+summarized below. Click on the sections to expand the full list of
+package versions.
 
-─ Packages ───────────────────────────────────────────────────────────────────────────────────────────────────────────────
+### Main simulation
+
+| Setting  | Value                                  |
+|----------|----------------------------------------|
+| R        | 4.5.3 (2026-03-11)                     |
+| OS       | macOS 27.0.1 (aarch64, darwin20)       |
+| IDE      | RStudio 2026.09.0+174 (desktop)        |
+| Pandoc   | 3.10                                   |
+| Quarto   | 1.10.18                                |
+| Locale   | en_US.UTF-8                            |
+| Timezone | Europe/Rome                            |
+| Date     | 2026-10-14                             |
+
+<details>
+<summary><b>Package versions (main simulation)</b></summary>
+
+```text
  package      * version    date (UTC) lib source
  abind          1.4-8      2024-09-12 [1] CRAN (R 4.5.0)
  AFTCoop      * 0.2.4      2026-04-28 [1] local (AFTCoop_0.2.4.tar.gz)
@@ -315,29 +321,19 @@ over rho values and default settings.
 
  [1] /Library/Frameworks/R.framework/Versions/4.5-arm64/Resources/library
  * ── Packages attached to the search path.
+```
 
-──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+</details>
 
+### Additional simulation
 
+The platform is the same as for the main simulation (R 4.5.3, macOS 27.0.1,
+aarch64, RStudio 2026.09.0+174, date 2026-10-14).
 
-## Session Info for the Additional Simulation
+<details>
+<summary><b>Package versions (additional simulation)</b></summary>
 
-───────────────────────────────────────────────────────────────────────────────────────────────────────────
- setting  value
- version  R version 4.5.3 (2026-03-11)
- os       macOS 27.0.1
- system   aarch64, darwin20
- ui       RStudio
- language (EN)
- collate  en_US.UTF-8
- ctype    en_US.UTF-8
- tz       Europe/Rome
- date     2026-10-14
- rstudio  2026.09.0+174 Autumn Hawkbit (desktop)
- pandoc   3.10 @ /Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools/aarch64/ (via rmarkdown)
- quarto   1.10.18 @ /Applications/RStudio.app/Contents/Resources/app/quarto/bin/quarto
-
-─ Packages ───────────────────────────────────────────────────────────────────────────────────────────────────────────────
+```text
  package      * version    date (UTC) lib source
  abind          1.4-8      2024-09-12 [1] CRAN (R 4.5.0)
  AFTCoop      * 0.2.4      2026-04-28 [1] local (AFTCoop_0.2.4.tar.gz)
@@ -377,7 +373,6 @@ over rho values and default settings.
  Hmisc        * 5.3-0      2026-09-06 [1] CRAN (R 4.5.2)
  hms            1.1.4      2025-10-17 [1] CRAN (R 4.5.0)
  hrbrthemes   * 0.9.3      2026-04-20 [1] CRAN (R 4.5.2)
- htmlTable      2.5.0      2026-04-22 [1] CRAN (R 4.5.2)
  htmltools      0.5.9      2025-12-04 [1] CRAN (R 4.5.2)
  htmlwidgets    1.6.4      2023-12-06 [1] CRAN (R 4.5.0)
  knitr          1.52       2026-09-06 [1] CRAN (R 4.5.2)
@@ -434,8 +429,9 @@ over rho values and default settings.
 
  [1] /Library/Frameworks/R.framework/Versions/4.5-arm64/Resources/library
  * ── Packages attached to the search path.
+```
 
-──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+</details>
 
 
 ## 📚 Citation
